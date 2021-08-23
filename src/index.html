@@ -12,16 +12,22 @@
     />
   </head>
   <body>
-    <div>
+    <!-- <div>
       <h1></h1>
       <input id="input-id" placeholder="Country" />
       <div id="countries"></div>
-    </div>
+    </div> -->
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <!-- <include src="./partials/example.html"></include> -->
-
+    <section class="section">
+      <div class="input__box">
+        <h1 class="input__title">Search a country</h1>
+        <input class="input__text" type="text" placeholder="Country" />
+      </div>
+      <div class="render_box"></div>
+    </section>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <!-- <script src="./index.js"></script> -->
-    <script src="./fetchCountries.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
