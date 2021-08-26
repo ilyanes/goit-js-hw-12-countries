@@ -21,7 +21,7 @@ function onInput(event) {
   fetchCountries(country)
     .then(r => renderResult(r))
     .catch(() => errorServerMessage());
-  clearInput();
+  // clearInput();
 }
 
 function renderResult(arr) {
@@ -46,11 +46,11 @@ function createCountryListMarkup(arr) {
 function createCountryCardMarkup(arr) {
   refs.renderBox.innerHTML = countryCardMarkup(arr);
 }
-function clearInput() {
-  setTimeout(() => {
-    refs.input.value = '';
-  }, 2000);
-}
+// function clearInput() {
+//   setTimeout(() => {
+//     refs.input.value = '';
+//   }, 2000);
+// }
 function noticeMessage() {
   refs.renderBox.innerHTML = '';
   notice({
